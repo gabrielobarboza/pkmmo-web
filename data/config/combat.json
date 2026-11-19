@@ -2,6 +2,7 @@
   "team": {
     "maxTeamSize": 6,
     "swapCooldownMs": 2000,
+    "globalCooldownMs": 1000,
     "maxAreasPerPlayer": 2,
     "downedDurationMs": 30000
   },

@@ -8,24 +8,8 @@ import {
   skillSchema,
   statusConfigSchema,
   typeChartSchema,
-  type CombatConfig,
-  type Monster,
-  type Skill,
-  type StatusConfig,
-  type TypeChart,
+  type Registry,
 } from './schema';
-
-export interface Registry {
-  /** Hash do conteúdo; cliente e servidor o comparam ao conectar. */
-  version: string;
-  skills: Record<string, Skill>;
-  monsters: Record<string, Monster>;
-  config: {
-    combat: CombatConfig;
-    status: StatusConfig;
-    typeChart: TypeChart;
-  };
-}
 
 export class DataError extends Error {
   constructor(public readonly errors: string[]) {

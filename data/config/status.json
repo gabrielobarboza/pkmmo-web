@@ -11,7 +11,8 @@
       "removedByElements": [
         "WATER",
         "ICE"
-      ]
+      ],
+      "blocksStacksWhileActive": true
     },
     "freeze": {
       "stacksToTrigger": 8,

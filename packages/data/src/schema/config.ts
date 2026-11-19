@@ -28,6 +28,7 @@ export const combatConfigSchema = z
       .object({
         maxTeamSize: posInt,
         swapCooldownMs: posInt,
+        globalCooldownMs: posInt,
         maxAreasPerPlayer: posInt,
         downedDurationMs: posInt,
       })
@@ -94,6 +95,7 @@ const statusDefSchema = z
     removedByElements: z.array(elementSchema).optional(),
     cleanseOnly: z.boolean().optional(),
     brokenByDirectAttack: z.boolean().optional(),
+    blocksStacksWhileActive: z.boolean().optional(),
   })
   .strict();
 

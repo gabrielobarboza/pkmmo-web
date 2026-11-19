@@ -19,7 +19,10 @@ data/                 definições do jogo (um JSON por habilidade e por monstro
   config/
 packages/
   data/               schemas (zod), validação e build do registro de dados
-  combat/             motor de combate em TypeScript puro (ainda vazio)
+  combat/             motor de combate em TypeScript puro (um jogador; threat e curas ainda não)
+  combat/fixtures/    cenários gerados pelo simulador, usados nos testes de paridade
+tools/
+  simulator/          simulador de referência em Python (sim.py) e gerador dos cenários
 apps/
   server/             servidor autoritativo (carrega o registro de dados)
   client/             cliente web (aguarda a spec visual)
@@ -32,9 +35,17 @@ Requer Node 22 e pnpm (`corepack enable`).
 ```bash
 pnpm install
 pnpm build:data     # valida data/ e gera packages/data/dist/registry.json
-pnpm test           # testes dos schemas e dos dados reais
+pnpm test           # schemas, dados reais e paridade do motor com o simulador
 pnpm typecheck
 pnpm server         # sobe o servidor (falha se algum dado for inválido)
+```
+
+## Cenários de referência
+
+O motor é testado contra o simulador de `tools/simulator`. Depois de mudar uma regra no simulador, regenere os cenários:
+
+```bash
+python3 tools/simulator/export_fixtures.py packages/combat/fixtures
 ```
 
 ## Regras dos dados
