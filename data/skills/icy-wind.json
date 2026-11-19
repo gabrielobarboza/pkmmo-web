@@ -1,0 +1,19 @@
+{
+  "id": "icy-wind",
+  "name": "Icy Wind",
+  "description": "The user attacks with a gust of chilled air.",
+  "element": "ICE",
+  "category": "special",
+  "power": 55,
+  "cooldown": 12000,
+  "areaEffect": {
+    "radius": 4,
+    "duration": 5000
+  },
+  "statusEffect": {
+    "type": "freeze",
+    "stacksPerHit": 4,
+    "tickMs": 1000,
+    "stacksPerTick": 1
+  }
+}

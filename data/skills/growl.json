@@ -1,0 +1,14 @@
+{
+  "id": "growl",
+  "name": "Growl",
+  "description": "The user growls endearingly to make targets less wary, which lowers their Attack stats for a short time.",
+  "element": "NORMAL",
+  "category": "effect",
+  "cooldown": 8000,
+  "areaEffect": {
+    "radius": 6
+  },
+  "debuffEffect": {
+    "type": "offense"
+  }
+}

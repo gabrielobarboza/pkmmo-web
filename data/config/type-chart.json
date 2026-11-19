@@ -1,0 +1,244 @@
+{
+  "NORMAL": {
+    "resistant": [
+      "ROCK",
+      "STEEL"
+    ],
+    "immune": [
+      "GHOST"
+    ]
+  },
+  "FIRE": {
+    "vulnerable": [
+      "GRASS",
+      "ICE",
+      "BUG",
+      "STEEL"
+    ],
+    "resistant": [
+      "FIRE",
+      "WATER",
+      "ROCK",
+      "DRAGON"
+    ]
+  },
+  "WATER": {
+    "vulnerable": [
+      "FIRE",
+      "GROUND",
+      "ROCK"
+    ],
+    "resistant": [
+      "WATER",
+      "GRASS",
+      "DRAGON"
+    ]
+  },
+  "ELECTRIC": {
+    "vulnerable": [
+      "WATER",
+      "FLYING"
+    ],
+    "resistant": [
+      "ELECTRIC",
+      "GRASS",
+      "DRAGON"
+    ],
+    "immune": [
+      "GROUND"
+    ]
+  },
+  "GRASS": {
+    "vulnerable": [
+      "WATER",
+      "GROUND",
+      "ROCK"
+    ],
+    "resistant": [
+      "FIRE",
+      "GRASS",
+      "POISON",
+      "FLYING",
+      "BUG",
+      "DRAGON",
+      "STEEL"
+    ]
+  },
+  "ICE": {
+    "vulnerable": [
+      "GRASS",
+      "GROUND",
+      "FLYING",
+      "DRAGON"
+    ],
+    "resistant": [
+      "FIRE",
+      "WATER",
+      "ICE",
+      "STEEL"
+    ]
+  },
+  "FIGHTING": {
+    "vulnerable": [
+      "NORMAL",
+      "ICE",
+      "ROCK",
+      "DARK",
+      "STEEL"
+    ],
+    "resistant": [
+      "POISON",
+      "FLYING",
+      "PSYCHIC",
+      "BUG",
+      "FAIRY"
+    ],
+    "immune": [
+      "GHOST"
+    ]
+  },
+  "POISON": {
+    "vulnerable": [
+      "GRASS",
+      "FAIRY"
+    ],
+    "resistant": [
+      "POISON",
+      "GROUND",
+      "ROCK",
+      "GHOST"
+    ],
+    "immune": [
+      "STEEL"
+    ]
+  },
+  "GROUND": {
+    "vulnerable": [
+      "FIRE",
+      "ELECTRIC",
+      "POISON",
+      "ROCK",
+      "STEEL"
+    ],
+    "resistant": [
+      "GRASS",
+      "BUG"
+    ],
+    "immune": [
+      "FLYING"
+    ]
+  },
+  "FLYING": {
+    "vulnerable": [
+      "GRASS",
+      "FIGHTING",
+      "BUG"
+    ],
+    "resistant": [
+      "ELECTRIC",
+      "ROCK",
+      "STEEL"
+    ]
+  },
+  "PSYCHIC": {
+    "vulnerable": [
+      "FIGHTING",
+      "POISON"
+    ],
+    "resistant": [
+      "PSYCHIC",
+      "STEEL"
+    ],
+    "immune": [
+      "DARK"
+    ]
+  },
+  "BUG": {
+    "vulnerable": [
+      "GRASS",
+      "PSYCHIC",
+      "DARK"
+    ],
+    "resistant": [
+      "FIRE",
+      "FIGHTING",
+      "POISON",
+      "FLYING",
+      "GHOST",
+      "STEEL",
+      "FAIRY"
+    ]
+  },
+  "ROCK": {
+    "vulnerable": [
+      "FIRE",
+      "ICE",
+      "FLYING",
+      "BUG"
+    ],
+    "resistant": [
+      "FIGHTING",
+      "GROUND",
+      "STEEL"
+    ]
+  },
+  "GHOST": {
+    "vulnerable": [
+      "PSYCHIC",
+      "GHOST"
+    ],
+    "resistant": [
+      "DARK"
+    ],
+    "immune": [
+      "NORMAL"
+    ]
+  },
+  "DRAGON": {
+    "vulnerable": [
+      "DRAGON"
+    ],
+    "resistant": [
+      "STEEL"
+    ],
+    "immune": [
+      "FAIRY"
+    ]
+  },
+  "DARK": {
+    "vulnerable": [
+      "PSYCHIC",
+      "GHOST"
+    ],
+    "resistant": [
+      "FIGHTING",
+      "DARK",
+      "FAIRY"
+    ]
+  },
+  "STEEL": {
+    "vulnerable": [
+      "ICE",
+      "ROCK",
+      "FAIRY"
+    ],
+    "resistant": [
+      "FIRE",
+      "WATER",
+      "ELECTRIC",
+      "STEEL"
+    ]
+  },
+  "FAIRY": {
+    "vulnerable": [
+      "FIGHTING",
+      "DRAGON",
+      "DARK"
+    ],
+    "resistant": [
+      "FIRE",
+      "POISON",
+      "STEEL"
+    ]
+  }
+}

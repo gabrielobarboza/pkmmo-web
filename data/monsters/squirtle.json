@@ -1,0 +1,23 @@
+{
+  "id": "squirtle",
+  "name": "Squirtle",
+  "dex": 7,
+  "types": [
+    "WATER"
+  ],
+  "role": "tanker",
+  "baseStats": {
+    "hp": 44,
+    "attack": 48,
+    "defense": 65,
+    "spAttack": 50,
+    "spDefense": 64,
+    "speed": 43
+  },
+  "moves": [
+    "water-gun",
+    "taunt",
+    "iron-defense",
+    "icy-wind"
+  ]
+}

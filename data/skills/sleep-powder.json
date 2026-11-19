@@ -1,0 +1,17 @@
+{
+  "id": "sleep-powder",
+  "name": "Sleep Powder",
+  "description": "The user scatters a cloud of soporific powder that leaves targets drowsy.",
+  "element": "GRASS",
+  "category": "effect",
+  "cooldown": 10000,
+  "areaEffect": {
+    "radius": 6,
+    "duration": 5000
+  },
+  "statusEffect": {
+    "type": "sleep",
+    "tickMs": 1000,
+    "stacksPerTick": 1
+  }
+}

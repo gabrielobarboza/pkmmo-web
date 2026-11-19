@@ -1,0 +1,13 @@
+{
+  "id": "taunt",
+  "name": "Taunt",
+  "description": "The targets are taunted into a rage that allows it to attack the user for a while.",
+  "element": "DARK",
+  "category": "effect",
+  "cooldown": 12000,
+  "areaEffect": {
+    "radius": 8,
+    "duration": 6000
+  },
+  "threatSet": 500
+}

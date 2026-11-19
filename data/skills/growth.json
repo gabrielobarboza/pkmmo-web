@@ -1,0 +1,11 @@
+{
+  "id": "growth",
+  "name": "Growth",
+  "description": "The user boosts its Offensive attributes for a short time by prompting its body to grow all at once.",
+  "element": "GRASS",
+  "category": "effect",
+  "cooldown": 12000,
+  "buffEffect": {
+    "type": "offense"
+  }
+}

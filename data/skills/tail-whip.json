@@ -1,0 +1,14 @@
+{
+  "id": "tail-whip",
+  "name": "Tail Whip",
+  "description": "The user wags its tail cutely to make targets less wary, which lowers their Defense stats for a short time.",
+  "element": "NORMAL",
+  "category": "effect",
+  "cooldown": 8000,
+  "areaEffect": {
+    "radius": 6
+  },
+  "debuffEffect": {
+    "type": "defense"
+  }
+}

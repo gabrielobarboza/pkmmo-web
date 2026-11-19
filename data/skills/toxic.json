@@ -1,0 +1,18 @@
+{
+  "id": "toxic",
+  "name": "Toxic",
+  "description": "A move that leaves the target badly poisoned.",
+  "element": "POISON",
+  "category": "effect",
+  "cooldown": 16000,
+  "areaEffect": {
+    "radius": 8,
+    "duration": 6000
+  },
+  "statusEffect": {
+    "type": "poison",
+    "stacksPerHit": 14,
+    "tickMs": 1000,
+    "stacksPerTick": 1
+  }
+}

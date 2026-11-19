@@ -1,0 +1,53 @@
+{
+  "stackDurationMs": 5000,
+  "periodicTickMs": 1000,
+  "immunityWindowMs": 2000,
+  "statuses": {
+    "burn": {
+      "stacksToTrigger": 8,
+      "durationMs": 5000,
+      "periodicDamagePctMaxHp": 2.5,
+      "outputDamagePct": -10,
+      "removedByElements": [
+        "WATER",
+        "ICE"
+      ]
+    },
+    "freeze": {
+      "stacksToTrigger": 8,
+      "durationMs": 5000,
+      "stun": true,
+      "removedByElements": [
+        "FIRE"
+      ]
+    },
+    "paralyze": {
+      "stacksToTrigger": 8,
+      "durationMs": 6000,
+      "stunMs": 500,
+      "slow": true,
+      "cleanseOnly": true
+    },
+    "poison": {
+      "stacksToTrigger": 10,
+      "durationMs": 5000,
+      "periodicDamagePctMaxHp": 2.5,
+      "cleanseOnly": true
+    },
+    "sleep": {
+      "stacksToTrigger": 8,
+      "durationMs": 5000,
+      "stun": true,
+      "brokenByDirectAttack": true
+    }
+  },
+  "escalations": {
+    "deadly-poison": {
+      "escalatesFrom": "poison",
+      "stacks": 10,
+      "durationMs": 5000,
+      "periodicDamagePctMaxHp": 5,
+      "cleanseOnly": true
+    }
+  }
+}

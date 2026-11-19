@@ -1,0 +1,23 @@
+{
+  "id": "charmander",
+  "name": "Charmander",
+  "dex": 4,
+  "types": [
+    "FIRE"
+  ],
+  "role": "dps",
+  "baseStats": {
+    "hp": 39,
+    "attack": 52,
+    "defense": 43,
+    "spAttack": 60,
+    "spDefense": 50,
+    "speed": 65
+  },
+  "moves": [
+    "ember",
+    "scratch",
+    "growl",
+    "tail-whip"
+  ]
+}

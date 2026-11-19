@@ -1,0 +1,17 @@
+{
+  "id": "poison-powder",
+  "name": "Poison Powder",
+  "description": "The user scatters a cloud of poisonous powder that leaves targets poisoned.",
+  "element": "POISON",
+  "category": "effect",
+  "cooldown": 10000,
+  "areaEffect": {
+    "radius": 6,
+    "duration": 6000
+  },
+  "statusEffect": {
+    "type": "poison",
+    "tickMs": 1000,
+    "stacksPerTick": 1
+  }
+}

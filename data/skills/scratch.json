@@ -1,0 +1,9 @@
+{
+  "id": "scratch",
+  "name": "Scratch",
+  "description": "Scratches the foe with sharp claws.",
+  "element": "NORMAL",
+  "category": "physical",
+  "power": 40,
+  "cooldown": 2000
+}

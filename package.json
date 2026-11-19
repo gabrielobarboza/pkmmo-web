@@ -1,0 +1,20 @@
+{
+  "name": "pkmmo-web",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Pokémon-themed cooperative action game (hobby project)",
+  "license": "MIT",
+  "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build:data": "pnpm --filter @pkmmo/data build",
+    "test": "pnpm -r --if-present test",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "server": "pnpm --filter @pkmmo/server start"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  }
+}

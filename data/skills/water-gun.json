@@ -1,0 +1,9 @@
+{
+  "id": "water-gun",
+  "name": "Water Gun",
+  "description": "The user attacks by blasting targets with a forceful shot of water.",
+  "element": "WATER",
+  "category": "special",
+  "power": 45,
+  "cooldown": 3000
+}

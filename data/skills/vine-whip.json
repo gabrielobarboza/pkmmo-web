@@ -1,0 +1,9 @@
+{
+  "id": "vine-whip",
+  "name": "Vine Whip",
+  "description": "Strikes the foe with slender, whiplike vines.",
+  "element": "GRASS",
+  "category": "physical",
+  "power": 45,
+  "cooldown": 3000
+}

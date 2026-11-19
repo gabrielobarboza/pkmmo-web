@@ -1,0 +1,76 @@
+{
+  "team": {
+    "maxTeamSize": 6,
+    "swapCooldownMs": 2000,
+    "maxAreasPerPlayer": 2,
+    "downedDurationMs": 30000
+  },
+  "level": {
+    "min": 1,
+    "max": 100,
+    "shinyBonusPct": 10
+  },
+  "damage": {
+    "stabMultiplier": 1.5,
+    "typeDefenseStep": 0.25,
+    "attributeModifierPct": 30,
+    "defaultModifierDurationMs": 10000
+  },
+  "crit": {
+    "baseChancePct": 15,
+    "typeStepPct": 10,
+    "damageMultiplier": 1.5
+  },
+  "threat": {
+    "defaultThreat": 50,
+    "overTimeDivisor": 5,
+    "directHealMultiplier": 2,
+    "cap": 1000,
+    "tankerMultiplier": 1.2,
+    "bossLockMultiplier": 0.5
+  },
+  "enemy": {
+    "skillIntervalMs": 2000
+  },
+  "boss": {
+    "periodicDamageMultiplier": 0.1
+  },
+  "roles": {
+    "support": {
+      "healPct": 10,
+      "buffDurationPct": 20,
+      "cleanseDurationPct": 20,
+      "healAreaDurationPct": 20
+    },
+    "tanker": {
+      "hpPct": 10,
+      "defensivePct": 10,
+      "buffDurationPct": 20
+    },
+    "controller": {
+      "areaTickMs": 500,
+      "areaStatuses": [
+        "freeze",
+        "sleep",
+        "paralyze"
+      ],
+      "extraDirectStacks": 1,
+      "extraEffectDurationMs": 1000,
+      "debuffDurationPct": 20
+    },
+    "dps": {
+      "areaTickMs": 500,
+      "areaStatuses": [
+        "burn",
+        "poison"
+      ],
+      "extraDirectStacks": 1,
+      "extraEffectDurationMs": 1000,
+      "periodicDamagePct": 10
+    },
+    "attacker": {
+      "offensivePct": 10,
+      "critBonusPct": 10
+    }
+  }
+}

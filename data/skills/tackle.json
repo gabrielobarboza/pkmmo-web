@@ -1,0 +1,9 @@
+{
+  "id": "tackle",
+  "name": "Tackle",
+  "description": "Charges the foe with a full-body tackle.",
+  "element": "NORMAL",
+  "category": "physical",
+  "power": 40,
+  "cooldown": 2000
+}

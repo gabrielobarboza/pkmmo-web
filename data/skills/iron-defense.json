@@ -1,0 +1,11 @@
+{
+  "id": "iron-defense",
+  "name": "Iron Defense",
+  "description": "The user boosts its Defensive attributes for a while by hardening the surface of its body until it becomes like iron.",
+  "element": "STEEL",
+  "category": "effect",
+  "cooldown": 8000,
+  "buffEffect": {
+    "type": "defense"
+  }
+}

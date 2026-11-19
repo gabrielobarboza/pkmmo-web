@@ -1,0 +1,13 @@
+{
+  "id": "acid",
+  "name": "Acid",
+  "description": "Opposing Pokémon are attacked with a spray of harsh acid.",
+  "element": "POISON",
+  "category": "special",
+  "power": 40,
+  "cooldown": 4000,
+  "statusEffect": {
+    "type": "poison",
+    "stacksPerHit": 4
+  }
+}
