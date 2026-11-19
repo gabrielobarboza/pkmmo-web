@@ -11,6 +11,8 @@ export const monsterSchema = z
     notes: z.string().optional(),
     types: z.array(elementSchema).min(1).max(2),
     role: roleSchema,
+    /** Boss: o Taunt e as travas de alvo duram `threat.bossLockMultiplier` da duração normal. */
+    boss: z.boolean().optional(),
     baseStats: z
       .object({
         hp: posInt,

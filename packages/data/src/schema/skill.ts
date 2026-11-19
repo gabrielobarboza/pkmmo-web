@@ -114,6 +114,11 @@ export const skillSchema = z
       if (s.threatSet !== undefined) issue(['threatSet'], 'threatSet só vale na categoria effect');
     }
 
+    // No Taunt, a duração da área é a trava de alvo (SDD 03).
+    if (s.threatSet !== undefined && s.areaEffect?.duration === undefined) {
+      issue(['threatSet'], 'threatSet exige areaEffect.duration, que é a trava de alvo');
+    }
+
     if (s.buffEffect && s.debuffEffect) {
       issue(['debuffEffect'], 'uma habilidade não combina buffEffect e debuffEffect');
     }

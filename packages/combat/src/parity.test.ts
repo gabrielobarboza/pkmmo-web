@@ -29,7 +29,7 @@ for (const file of files) {
   const fx: Fixture = JSON.parse(readFileSync(new URL(file, dir), 'utf8'));
 
   test(`paridade com o simulador: ${fx.name}`, () => {
-    const battle = new Battle(data, { player: fx.player, enemies: fx.enemies });
+    const battle = new Battle(data, { players: [{ id: 'p1', team: fx.player }], enemies: fx.enemies });
     const commandsAt = new Map<number, Fixture['commands']>();
     for (const c of fx.commands) commandsAt.set(c.t, [...(commandsAt.get(c.t) ?? []), c]);
     const checkpointAt = new Map(fx.checkpoints.map((c) => [c.t, c]));
@@ -39,14 +39,14 @@ for (const file of files) {
     while (battle.now < 300000) {
       const t = battle.now;
       for (const c of commandsAt.get(t) ?? []) {
-        battle.command(c.kind === 'swap' ? { kind: 'swap', to: c.to } : { kind: 'cast', skill: c.skill, target: c.target });
+        battle.command(0, c.kind === 'swap' ? { kind: 'swap', to: c.to } : { kind: 'cast', skill: c.skill, target: c.target });
       }
       battle.step();
 
       const cp = checkpointAt.get(t);
       if (cp) {
-        assert.equal(battle.active, cp.active, `monstro ativo em ${t} ms`);
-        battle.player.forEach((m, i) => assert.ok(close(m.hp, cp.team[i]!), `HP do time[${i}] em ${t} ms: ${m.hp} != ${cp.team[i]}`));
+        assert.equal(battle.players[0]!.active, cp.active, `monstro ativo em ${t} ms`);
+        battle.players[0]!.team.forEach((m, i) => assert.ok(close(m.hp, cp.team[i]!), `HP do time[${i}] em ${t} ms: ${m.hp} != ${cp.team[i]}`));
         battle.enemies.forEach((m, i) => assert.ok(close(m.hp, cp.enemies[i]!), `HP do inimigo[${i}] em ${t} ms: ${m.hp} != ${cp.enemies[i]}`));
       }
       const w = battle.winner();

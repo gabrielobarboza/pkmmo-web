@@ -104,6 +104,26 @@ test('monstro válido passa', () => {
   assert.equal(monsterSchema.safeParse(monster).success, true);
 });
 
+test('boss é opcional e booleano', () => {
+  assert.equal(monsterSchema.safeParse({ ...monster, boss: true }).success, true);
+  assert.equal(monsterSchema.safeParse({ ...monster, boss: 'sim' }).success, false);
+});
+
+test('threatSet exige a duração da área, que é a trava de alvo', () => {
+  const taunt = {
+    id: 'taunt',
+    name: 'Taunt',
+    description: 'x',
+    element: 'DARK',
+    category: 'effect',
+    cooldown: 12000,
+    threatSet: 500,
+  };
+  assert.equal(skillSchema.safeParse({ ...taunt, areaEffect: { radius: 8, duration: 6000 } }).success, true);
+  assert.equal(skillSchema.safeParse({ ...taunt, areaEffect: { radius: 8 } }).success, false);
+  assert.equal(skillSchema.safeParse(taunt).success, false);
+});
+
 test('monstro com mais de 4 habilidades ou 2 tipos é recusado', () => {
   assert.equal(
     monsterSchema.safeParse({ ...monster, moves: ['a', 'b', 'c', 'd', 'e'] }).success,

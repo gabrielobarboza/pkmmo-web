@@ -19,7 +19,7 @@ data/                 definições do jogo (um JSON por habilidade e por monstro
   config/
 packages/
   data/               schemas (zod), validação e build do registro de dados
-  combat/             motor de combate em TypeScript puro (um jogador; threat e curas ainda não)
+  combat/             motor de combate em TypeScript puro (vários jogadores e threat; curas ainda não)
   combat/fixtures/    cenários gerados pelo simulador, usados nos testes de paridade
 tools/
   simulator/          simulador de referência em Python (sim.py) e gerador dos cenários
